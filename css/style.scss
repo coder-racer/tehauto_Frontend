@@ -1,0 +1,249 @@
+@import "fonts";
+
+$color-3: #454545;
+$color-2: #FDB757;
+$color-1: #211D74;
+
+*{
+  padding: 0;
+  outline: none;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Petra Sans", sans-serif;
+  //font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: $color-1;
+}
+body{
+  box-sizing: border-box;
+}
+
+.logo{
+  background: url("../img/logo.svg") no-repeat;
+  height: 57px;
+  width: 226px;
+}
+
+.logo-white{
+  background: url("../img/logo-white.svg") no-repeat;
+  width: 293px;
+  height: 42px;
+}
+header{
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 36px 57px;
+  nav{
+    ul{
+      flex-wrap: wrap;
+      display: flex;
+      li{
+        margin: 0 76px;
+        list-style-type: none;
+      }
+    }
+  }
+  a{
+    font-size: 18px;
+    color: #909090;
+    font-weight: 500;
+    padding-bottom: 16px;
+  }
+  .active{
+    border-bottom: 2px solid $color-2;
+    color: #211D74;
+  }
+}
+.container{
+  margin: 0 auto;
+  max-width: 1920px;
+  justify-content: space-between;
+}
+
+.search{
+  padding: 0 25px;
+  background: url("../img/search.svg") no-repeat center;
+  height: 20px;
+  width: 20px;
+}
+
+.page_title{
+  margin-top: 25px;
+  color: #909090;
+  font-weight: 500;
+  font-size: 18px;
+}
+.container.map{
+  display: flex;
+  background: url("../img/Карта 3.png") #dcdce9;
+  align-items: center;
+  height: 533px;
+  width: 100%;
+  .map_text{
+    position: relative;
+    box-shadow: -104px -66px 0 0 $color-1;
+    left: 104px;
+    top: 33px;
+    box-sizing: border-box;
+    max-width: 932px;
+    background: #ffffff;
+    padding: 35px 44px;
+    h1{
+      line-height: 65px;
+      margin: 0;
+      font-weight: 800;
+      font-size: 64px;
+    }
+    p{
+      margin-top: 16px;
+      font-size: 18px;
+      color: $color-3;
+      font-weight: 600;
+    }
+  }
+}
+.section_item_row{
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  max-width: 1319px;
+  .section_item_text {
+    width: 500px;
+    h1 {
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 45px;
+      text-transform: uppercase;
+      color: $color-1
+    }
+    .additional_text{
+      margin-top: 35px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      color: $color-3;
+    }
+    .btn{
+      margin-top: 45px;
+    }
+  }
+
+  .section_item_text + .section_item_image_block{
+    margin-left: 120px;
+  }
+
+  .section_item_image{
+    background: rgba(196, 196, 196, 0.01);
+    box-shadow: 0 19.9964px 39.9927px rgba(43, 54, 95, 0.2);
+    z-index: 1;
+  }
+  .section_item_image_block{
+    position: relative;
+  }
+  .section_item_image_effect{
+    z-index: -1;
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    opacity: 0.2;
+    filter: grayscale(100%);
+  }
+}
+.btn{
+  position: relative;
+  display: inline-block;
+  padding: 18px 45px;
+  border: 1px solid #FDB757;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: $color-3;
+}
+
+.btn:hover{
+  background: $color-2;
+  transition: all 500ms ease-out;
+}
+
+.section_item_row:nth-child(odd){
+  flex-direction: row-reverse;
+  .section_item_text + .section_item_image_block{
+    margin-right: 120px;
+  }
+  .section_item_image{
+    position: relative;
+  }
+
+  .section_item_text + .section_item_image_block{
+    margin-left: 0;
+  }
+
+  .section_item_image_effect{
+    top: 10%;
+    left: -10%;
+  }
+}
+
+.section_item_row:last-child{
+  margin-bottom: 200px;
+}
+
+footer{
+  padding: 60px 80px;
+  box-sizing: border-box;
+  background:  $color-1;
+  flex-wrap: wrap;
+}
+
+.contact_socials{
+  display: flex;
+  flex-wrap: wrap;
+  div{
+    margin-right: 25px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+.icon_whatsapp{
+  background: url("../img/icon/whatsapp.png");
+  width: 24px;
+  height: 24px;
+}
+
+.icon_instagram{
+  background: url("../img/icon/instagram.png");
+  width: 24px;
+  height: 23px;
+}
+
+.icon_facebook{
+  background: url("../img/icon/facebook.png");
+  width: 24px;
+  height: 24px;
+}
+
+.icon_youtube{
+  background: url("../img/icon/youtube.png");
+  width: 33px;
+  height: 24px;
+}
+
+.flex{
+  display: flex;
+}
+
+.align-center{
+  align-items: center;
+}
+
