@@ -2,4 +2,5 @@
 .git
 *.css
 *.css.map
+!css/normalize.css
 css/.sass-cache
