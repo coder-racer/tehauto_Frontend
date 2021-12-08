@@ -1,0 +1,33 @@
+.map {
+  display: flex;
+  background: url("../img/map.png") #dcdce9 no-repeat right;
+  align-items: center;
+  height: 533px;
+  width: 100%;
+  box-sizing: border-box;
+
+  .map_text {
+    position: relative;
+    box-shadow: -104px -66px 0 0 $color-1;
+    left: 104px;
+    top: 33px;
+    box-sizing: border-box;
+    max-width: 932px;
+    background: #ffffff;
+    padding: 35px 44px;
+
+    h1 {
+      line-height: 65px;
+      margin: 0;
+      font-weight: 800;
+      font-size: 64px;
+    }
+
+    p {
+      margin-top: 16px;
+      font-size: 18px;
+      color: $color-3;
+      font-weight: 600;
+    }
+  }
+}
